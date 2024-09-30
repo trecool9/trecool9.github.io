@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* прибираю розрив між комірками в таблиці */
+table {
+    border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+    border-spacing: 0;
+}
+
+table img {
+    vertical-align: middle;
+}
+/* Задав розмір ячеєк */
+.mondrian_row,
+.col {
+    height: 20px;
+    width: 20px;
+   
+}
+/* задав розмір самої таблиці */
+.mondrian {
+    height: 1000px;
+    width: 1000px;
+}
+/* задв лінії для своїх ячеєк */
+.col8_8,
+.col1_4r,
+.col2_5y,
+.col4_5y,
+.col4_2y,
+.col3_5bl,
+.col {
+    border: 10px solid #000;
+}
+/* задав колір */
+.col8_8,
+.col1_4r {
+    background-color: red;
+}
+
+.col2_5y,
+.col4_5y,
+.col4_2y {
+    background-color: yellow;
+}
+
+.col4_4b,
+.col1_4b {
+    background-color: black;
+}
+
+.col3_5bl {
+    background-color: blue;
+}
+/* закинув свої таблиці в контейнер */
+div {
+    border: 5px solid black;
+    display: flex;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    justify-content: center;https://github.com/trecool9/html_05.git
+}
