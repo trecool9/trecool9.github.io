@@ -64,8 +64,12 @@ h2 {
 }
 
 .nav {
+    display: flex;
     list-style: none;
     flex-wrap: wrap;
+    column-gap: 23px;
+    margin-left: -10px;
+
 }
 
 .nav__item {
@@ -79,6 +83,7 @@ h2 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     line-height: 1.64;
+    cursor: pointer;
 }
 
 .nav__link:hover {
@@ -89,6 +94,8 @@ h2 {
 .nav__link--active {
     color: #34547A;
 }
+
+
 
 .design {
     flex-direction: column;
@@ -145,6 +152,7 @@ h2 {
 .about__text {
     text-align: center;
 }
+
 /* PROJEKT */
 .project-conteiner {
     flex-wrap: wrap;
@@ -166,8 +174,6 @@ h2 {
 }
 
 /* WORK */
-
-
 .work-header{
     max-width: 600px;
     margin: 0 auto;
@@ -208,7 +214,7 @@ h2 {
 }
 
 /* @media adaptive */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 375px) {
     .hero__btn {
         min-width: 110px;
         margin-bottom: 70px;
@@ -216,13 +222,72 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .nav{
-        max-width: 611px;
-    }
+    
     .hero__text {
         width: 540px;
     }
 }
+
+@media (max-width: 767px){
+    .nav {
+        display: none;
+        margin-top: 30px;
+    }
+}
+
+/* burger */
+@media (min-width: 768px) {
+    .navbar__btn {
+        display: none;
+    }
+}
+.navbar__btn.active span:nth-child(1){
+    top: 9px;
+    transform: rotate(135deg);
+}
+.navbar__btn.active span:nth-child(2){
+    opacity: 0;
+    left: -30px;
+}
+.navbar__btn.active span:nth-child(3){
+    top: 9px;
+    transform: rotate(-135deg);
+}
+.navbar__btn-row {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+.navbar__btn-row:nth-child(1) {
+    top: 0;
+}
+.navbar__btn-row:nth-child(2) {
+    top: 9px;
+}
+.navbar__btn-row:nth-child(3) {
+    top: 18px;
+}
+.nav--active {
+    display: block;
+}
+.navbar__btn {
+    width: 30px;
+    height: 22px;
+    position: relative;
+    margin: 0;
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+/* ______________________________ */
+
 
 @media screen and (max-width: 992px) {
     .about-container {
