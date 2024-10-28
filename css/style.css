@@ -167,6 +167,7 @@ h2 {
     margin: 0 auto;
     padding: 0 3%;
 }
+
 .about__text {
     text-align: var(--text-position);
 }
@@ -246,16 +247,75 @@ h2 {
         min-width: 5px;
         margin-bottom: 0 auto;
     }
+    .footer {
+        text-align: center;
+    }
+    .footer__sm  {
+        margin: 0 ;
+        padding:  0;
+    }
+    .footer__bg {
+        margin: 0 ;
+        padding: 0;
+    }
 }
 
 @media (max-width: 767px){
     .nav {
         display: none;
-        margin-top: 30px;
     }
     .work-video iframe {
         max-height: 250px;
     }
+    .footer__sm  {
+        margin: 0 auto;
+        padding:  0% 23.3% 2%;
+    }
+    .footer__bg {
+        margin: 0 auto;
+        padding:  2% 23.3% 0;
+    }
+    .work-video {
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+    .work-header__title{
+        margin-bottom: 1%;
+    }
+    .work-header{
+        margin: 0 auto;
+        padding: 5%
+    }
+    .project-conteiner {
+        padding: 7%;
+    }
+    .about__title {
+        margin-bottom: 5%;
+    }
+    .about{
+        margin: 0 auto;
+        padding: 3% ;
+    }
+    .hero__title {
+        margin-bottom: 7%;
+        
+    }
+    .hero__text {
+        margin-bottom:  7%;    
+    }
+    .hero__btn {
+        display: inline-block;
+        min-width: 100px;
+        padding: 5%;
+        margin-bottom: 7%;
+    }
+    .header {
+        padding: 5% 0;
+    }
+    .navbar{
+        margin-bottom: 7%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
