@@ -30,7 +30,7 @@ function createDomElement(tagName, textContent, container) {
   return el;
 }
 
-// Демонстрація використання функції
+
 
 // В якості прикладу використовуємо body як контейнер
 const container = document.body 
@@ -63,12 +63,12 @@ function setUserInfoCookie(key, value) {
   const cookieString = `userInfo=${encoded}; expires=${date.toUTCString()}; path=/`;
   document.cookie = cookieString;
 
-  //Вивожу кукі в консоль 
+
   console.log(`Cookie: ${cookieString}`) 
   document.write(`<br> Cookie: ${cookieString}   <br>`) 
 }
 
-// Демонстрація використання функції
+
 setUserInfoCookie('language', 'en');
 
 

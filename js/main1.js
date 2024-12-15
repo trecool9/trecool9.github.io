@@ -31,6 +31,7 @@ function handleButtonClick(buttonId, message) {
   // Додаю обробник події кліку
   button.addEventListener('click', () => {
 
+ 
     console.log(message);
   })
 }
@@ -64,7 +65,7 @@ function trackMousePosition() {
   })
 }
 
-// Вивожу результат в консоль
+
 console.log(trackMousePosition())
 
 /*
@@ -116,10 +117,11 @@ function setupEventDelegation(selector) {
     // Отримуємо текст елемента і обрізаємо зайві пробіли за допомогою методу trim() 
     const itemText = clickedItem.textContent.trim();
     
-    // Виводимо повідомлення в консоль
+
     console.log(`Item clicked: ${itemText}`);
   })
 }
 setupEventDelegation('#testList')
+
 
 // export { handleButtonClick, trackMousePosition, setupEventDelegation }
