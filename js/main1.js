@@ -31,7 +31,6 @@ function handleButtonClick(buttonId, message) {
   // Додаю обробник події кліку
   button.addEventListener('click', () => {
 
-    // Виводимо повідомлення у консоль при кліку
     console.log(message);
   })
 }
@@ -123,5 +122,4 @@ function setupEventDelegation(selector) {
 }
 setupEventDelegation('#testList')
 
-// Експорт функції для використання та тестування
 // export { handleButtonClick, trackMousePosition, setupEventDelegation }
